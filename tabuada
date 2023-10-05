@@ -1,0 +1,6 @@
+# Programa que gera a tabuada de um número inteiro de 1 a 10, de acordo com a escolha da pessoa usuária.
+
+num = int(input("Digite o número que quer saber a tabuada: "))
+print(f"TABUDA DO {num}")
+for cont in range(1,11):
+  print(f"{num} * {cont} = {num*cont}")
