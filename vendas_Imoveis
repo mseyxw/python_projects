@@ -1,0 +1,16 @@
+# Código que analise os dados de vendas anuais de uma empresa de imóveis para ajudar a diretoria na tomada de decisão. 
+# O código coleta os dados de quantidade de venda durante os anos de 2022 e 2023 e fazer um cálculo de variação percentual. 
+
+ano2022 = float(input("Informe a quantidade de vendas do ano de 2022: "))
+ano2023 = float(input("Informe a quantidade de vendas do ano de 2023: "))
+
+percent = 100 * (ano2023 - ano2022) / (ano2022)
+
+if percent > 20:
+    print('Bonificação para o time de vendas.')
+elif 2 <= percent <= 20:
+    print('Pequena bonificação para time de vendas.')
+elif -10 <= percent < 2:
+    print('Planejamento de políticas de incentivo às vendas.')
+else:
+    print('Corte de gastos.')
