@@ -1,0 +1,21 @@
+
+print("--- TABELA DE PREÇOS POR LITRO ---")
+print("1. Diesel: R$2,00")
+print("2. Etanol: R$1,70")
+
+diesel = 2;
+etanol = 1,70;
+
+tipo = int(input("Digite o número correspondente ao tipo de combustível que deseja colocar: "))
+litros = float(input("Digite a quantidade de litros que deseja colocar: "))
+
+if tipo == 1 or tipo == 2:
+  if tipo == 1:
+    total = diesel * litros
+    print("O total a pagar será R$ ", total)
+  elif tipo == 2:
+     total = etanol * litros
+     print("O total a pagar será R$ ", total)
+
+else:
+  print("Digite um tipo de combustível válido!")
