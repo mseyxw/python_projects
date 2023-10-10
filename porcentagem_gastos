@@ -1,0 +1,13 @@
+# porcentagem de gastos de uma empresa utilizando listas e funções
+
+gastos = [2172.54, 3701.35, 3518.09, 3456.61, 3249.38, 2840.82, 3891.45, 3075.26, 2317.64, 3219.08]
+qtd = len(gastos)
+cont = 0
+
+for elemento in gastos:
+  if elemento > 3000:
+    cont += 1
+
+porcentagem_acima = 100 * (cont/qtd)
+print (f"{cont} compras foram feitas acima de R$ 3000")
+print (f"A porcentagem de compras acima de R$ 3000 foi: {porcentagem_acima} %")
