@@ -1,0 +1,7 @@
+lista = []
+
+for rep in range(0, 5):
+  num = int(input('Digite um número: '))
+  lista.append(num)
+
+print(lista)
