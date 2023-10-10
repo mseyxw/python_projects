@@ -1,0 +1,10 @@
+# preenchendo uma lista vazia com funções e laço de repetição e mostrando ela na tela em ordem normal e inversa.
+
+lista = []
+
+for rep in range(0, 5):
+  num = int(input('Digite um número: '))
+  lista.append(num)
+
+print(f'Lista em ordem normal: {lista}')
+print(f'Lista de números invertida: {lista[::-1]}')
